@@ -1,4 +1,4 @@
-# super-duper-garbanzo
+# Yelp project
 
 This is a my yelp project I did at my university. I used sentiment analysis and Pyspark to analyze over a million reviews. 
 There are two separate projects one was more machine learning focused.  The objective for the ‘yelp.py’ code was to find the top ten words for the negative reviews and the top ten words for the positive reviews for each restaurant genre. 
