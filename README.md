@@ -1,8 +1,13 @@
 # Yelp project
 
-This is a my yelp project I did at my university. I used sentiment analysis and Pyspark to analyze over a million reviews. 
-There are two separate projects one was more machine learning focused.  The objective for the ‘yelp.py’ code was to find the top ten words for the negative reviews and the top ten words for the positive reviews for each restaurant genre. 
 
-Here’s a quick walk through of my process. First, the data was cleaned and the required columns were selected. Then, the required columns were selected and the data was filtered by the genre type i.e. Mexican, Thai, etc. Once the data was separated, it was converted to an RDD. Next, I filtered the data on positive and negative reviews. I flatmapped through the RDDs and added a count. I reduced by key and sorted to find the top words. The indexed the sorted RDDs to show only the top ten. 
+### Project Intro 
+Yelp has provided a platform where anyone can be a food critic. Yelp allows everyday food goers the ability to rate and review a business. Many people will check the review section of Yelp or their preferred search engine before deciding on a place to eat. In fact, these reviews are so powerful they can affect your business such as a negative review that can cause revenues to drop and a positive review that can cause a rush of new customers. 
+When reviewing, culture plays a large part on how people build opinions towards different types of foods and cuisines [1]. There are many dishes people will drive miles out of their way to get. Identifying these dishes and significant moments in customers' reviews, can help ethnic cuisine market to their local communities. This report will explore the different opinions expressed in a genre's positive and negative reviews. Businesses can utilize the opinions of others to shape their community outreach. This sentiment analysis will provide businesses better insights on their strengths and weaknesses so they know how to grow their revenue and make improvements.
 
-The objective for the machine learning code was to predict a genre of restaurant by only using the review text. 
+
+### Dataset and Systems
+
+Sentiment analysis is a popular tool used to turn review data into information that can improve their business. Sentiment analysis is the process of computing text data to identify the emotional tone behind it [2]. It uses natural language processing models to process data retrieved from online forums. The datasets used for this sentiment analysis are from the Yelp review section and combine are over 4 gigabytes. They are two csv files joined during the data preparation for the analysis. 
+
+Due to the size of these datasets, these models are built and executed on the Apache Spark platform. The project will use multiple Spark APIs and libraries to analyze the data such as Pyspark, Spark ML, NLTK (Natural Language Toolkit), RDD, Pyspark Dataframe, and multiple SQL libraries. These were all run on a local terminal and the Google Cloud Platform. There are three code files attached to this report that support our analysis. 
